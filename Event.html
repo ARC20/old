@@ -1,0 +1,189 @@
+<!doctype html>
+<html lanf="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ <meta http-equlv="X-UA-Compatible" content="ie=edge">
+ <title>ARC Event</title>
+ <link rel="icon" href="images/icons/logo5.png" type="image/icon type">
+ <link rel="stylesheet" href="Event.css">
+</head>
+<body>
+<header>
+ <div class="container">
+  <nav class="nav">
+   <ul class="nav-list nav-list-mobile">
+    <li class="nav-item">
+	 <div class="mobile-menu">
+	  <span class="line line-top"></span>
+	  <span class="line line-bottom"></span>
+	 </div>
+	</li>
+	<li class="nav-item">
+	 <a href="index.html" class="nav-link nav-link-logo"></a>
+	</li>
+   </ul>
+   <ul class="nav-list nav-list-larger">
+	<li class="nav-item nav-item-hidden">
+	 <a href="index.html" class="nav-link nav-link-logo"></a>
+	</li>
+    <li class="nav-item">
+	 <a href="Event.html" class="nav-link">Event</a>
+	</li>
+	<li class="nav-item">
+	 <a href="#" class="nav-link">About Us</a>
+	</li>
+	<li class="nav-item">
+	 <a href="#" class="nav-link">Contect</a>
+	</li>
+	<li class="nav-item">
+	 <a href="#" class="nav-link">Support</a>
+	</li>
+   </ul>
+  </nav>
+ </div>
+</header>
+<script src="main.js"></script>
+
+<div class="blank"></div>
+
+<div class="main-container">
+ <div class="wrapper">
+  <div class="wrapper-box scroll">
+   <button class="tablinks" onclick="openEvent(event, 'Event')" id="defaultOpen">Event</button>
+   <button class="tablinks" onclick="openEvent(event, 'EP')">Event Photo</button>
+   <button class="tablinks" onclick="openEvent(event, 'MB')">Membership</button>
+  </div>
+ </div>
+ 
+ <div class="descri">
+  <h2>Methodist Pilley Institute × Accounting Recreational Club</h2>
+ </div>
+
+ <div id="Event" class="tabcontent">
+  <div class="sub-container2">
+   <h2>Lunar New Year Party 2020</h2>
+   <h4>Funny. Challenge.</h4>
+   <p>Event Past</p>
+   <div class="LM">
+    <a href="#">Learn more</a>
+   </div>
+   <div class="sub-container">
+    <img src="images/Event/ARC CNY FB.jpg" alt="img">
+   </div>
+  </div>
+  <footer>
+   <ul class="footer">
+    <li class="footer-items">
+     <p>Home > Event</p>
+    </li>
+    <li class="footer-items">
+     <p>Any question: Find a advisor or committee. Or email arclub20@gmail.com.</p>
+    </li>
+    <li class="footer-items">
+     <p>Copyright © 2020 Accounting Recreational Club. All Rights Reserved.</p>
+    </li>
+   </ul>
+  </footer>
+ </div>
+
+ <div id="EP" class="tabcontent">
+  <div class="wrapper2">
+   <div class="wrapper2-box scroll">
+    <button class="tablinks2" onclick="openEventP(event, '2019')" id="DOpen">2019</button>
+    <button class="tablinks2" onclick="openEventP(event, '2020')">2020</button>
+   </div>
+  </div>
+  <div id="2019" class="tabcontent2">
+  
+   <footer>
+    <ul class="footer">
+     <li class="footer-items">
+      <p>Home > Event Photo > 2019</p>
+     </li>
+     <li class="footer-items">
+      <p>Any question: Find a advisor or committee. Or email arclub20@gmail.com.</p>
+     </li>
+     <li class="footer-items">
+      <p>Copyright © 2020 Accounting Recreational Club. All Rights Reserved.</p>
+     </li>
+    </ul>
+   </footer>
+  </div>
+  <div id="2020" class="tabcontent2">
+  
+   <footer>
+    <ul class="footer">
+     <li class="footer-items">
+      <p>Home > Event Photo > 2020</p>
+     </li>
+     <li class="footer-items">
+      <p>Any question: Find a advisor or committee. Or email arclub20@gmail.com.</p>
+     </li>
+     <li class="footer-items">
+      <p>Copyright © 2020 Accounting Recreational Club. All Rights Reserved.</p>
+     </li>
+    </ul>
+   </footer>
+  </div>
+ </div>
+
+ <div id="MB" class="tabcontent">
+ 
+  <footer>
+   <ul class="footer">
+    <li class="footer-items">
+     <p>Home > Event > Membership</p>
+    </li>
+    <li class="footer-items">
+     <p>Any question: Find a advisor or committee. Or email arclub20@gmail.com.</p>
+    </li>
+    <li class="footer-items">
+     <p>Copyright © 2020 Accounting Recreational Club. All Rights Reserved.</p>
+    </li>
+   </ul>
+  </footer>
+ </div>
+
+</div>
+
+<script>
+function openEvent(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+function openEventP(evt, cityName) {
+  var i, tabcontent2, tablinks2;
+  tabcontent2 = document.getElementsByClassName("tabcontent2");
+  for (i = 0; i < tabcontent2.length; i++) {
+    tabcontent2[i].style.display = "none";
+  }
+  tablinks2 = document.getElementsByClassName("tablinks2");
+  for (i = 0; i < tablinks2.length; i++) {
+    tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("DOpen").click();
+</script>
+</body>
+</html>
