@@ -472,7 +472,11 @@ header {
   .row,
   .row > .column {
     padding: 10px 0;
-}
+  }
+  .row,
+  .row > .column2 {
+    padding: 10px 0;
+  }
 }
 
 @media screen and (max-width: 790px){
