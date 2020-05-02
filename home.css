@@ -287,7 +287,7 @@ header {
 }
 
 .main-container .slogon .btn{
-	height: 29px;
+	height: 28px;
 	width: 80px;
 	margin-right: auto;
 	margin-left: auto;
@@ -301,6 +301,12 @@ header {
 	border-radius: 22px;
 	font-size: 180%;
 	padding: 4.5px 0;
+}
+
+@media screen and (max-width: 767px){
+	.main-container .slogon .btn{
+	    height: 27px;
+    }
 }
 
 .main-container .slogon .btn:hover{
@@ -443,6 +449,7 @@ footer{
 	border-top: 0.8px solid rgb(199,199,204);
 	height: 20px;
 	color: rgb(142,142,147);
+	margin: 0 0 10px 0;
 }
 
 .footer .footer-items:nth-child(1){

@@ -216,7 +216,7 @@ header {
 
 .main-container .wrapper .tablinks{
 	display: inline;
-	margin: 10px 12px;
+	margin: 10px 10px;
 }
 
 .main-container .wrapper button{
@@ -370,7 +370,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	background-color: white;
-	padding: 46px 0 0 0;
+	padding: 46px 0 46px 0;
 	color: black;
 	margin-bottom: 11px;
 }
@@ -391,6 +391,28 @@ header {
 	margin: 5px 0;
 }
 
+.main-container .sub-container3{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	padding: 46px 0 46px 0;
+	color: white;
+	margin-bottom: 11px;
+}
+
+.main-container .sub-container3 h2{
+	font-size: 500%;
+	margin: 0 30px 0 30px;
+}
+
+.main-container .sub-container3 h4{
+	font-size: 280%;
+	font-weight: normal;
+}
+
 .LM a{
 	margin-top: 15px;
 	margin-bottom: 30px;
@@ -403,46 +425,57 @@ header {
     text-decoration: underline;
 }
 
-#countdown-container {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+.image-box {
+	min-height: 300px;
+	margin: 14.5px 29px;
+	display: block;
+	position: relative;
+	overflow: auto;
 }
 
-#countdown-container ul {
-  padding: 0;
+.row {
+  margin: 0 0;
 }
 
-#countdown-container li {
-  display: inline-block;
-  font-size: 2.5vw;
-  list-style-type: none;
-  padding: 1em;
-  text-transform: uppercase;
-  text-align: center;
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 4px;
 }
 
-#countdown-container li span {
-  display: block;
-  font-size: 5vw;
+.row,
+.row > .column2 {
+  padding: 4px;
 }
 
-@media screen and (max-width: 925px){
-    .main-container .slogon {
-	     width: 60%;
-	     margin-left: auto;
-	     margin-right: auto;
-	     height: auto;
-    }
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 49.2%;
+}
+
+.column2 {
+  float: left;
+  width: 32.5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .column {
+    width: 100%
+  }
+  .column2 {
+    width: 100%
+  }
+  .image-box {
+	margin: 14.5px 0;
+  }
+  .row,
+  .row > .column {
+    padding: 10px 0;
+}
 }
 
 @media screen and (max-width: 790px){
-    .main-container .slogon {
-	     width: 70%;
-	     margin-left: auto;
-	     margin-right: auto;
-	     height: auto;
-    }
 	footer .footer {
 	     padding: 20px 15px;
 		 list-style: none;
@@ -454,36 +487,6 @@ header {
     }
 	footer .footer .footer-items p{
          font-size: 120%;
-    }
-}
-
-
-@media screen and (max-width: 675px){
-    .main-container .slogon {
-	     width: 85%;
-	     margin-left: auto;
-	     margin-right: auto;
-	     height: auto;
-    }
-}
-
-@media screen and (max-width: 555px){
-    .main-container .slogon h1{
-	     font-size: 500%;
-    }
-	.main-container .slogon img{
-	     width: 114px;
-	     margin: 15px 0 0 0;
-    }
-}
-
-@media screen and (max-width: 400px){
-    .main-container .slogon h1{
-	     font-size: 400%;
-    }
-	.main-container .slogon img{
-	     width: 90px;
-	     margin: 10px 0 0 0;
     }
 }
 
@@ -506,6 +509,7 @@ footer{
 	border-top: 0.8px solid rgb(199,199,204);
 	height: 20px;
 	color: rgb(142,142,147);
+	margin: 0 0 10px 0;
 }
 
 .footer .footer-items:nth-child(1){
@@ -519,4 +523,10 @@ footer{
 .footer .footer-items p{
     font-size: 130%;
 	margin: 10px 0 3px 0;
+}
+
+.footer .footer-items .footer-title{
+    font-size: 130%;
+	margin: 10px 0 3px 0;
+	color: black;
 }
