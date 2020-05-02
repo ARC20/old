@@ -190,22 +190,7 @@ header {
 
 .main-container {
 	width: 100%;
-}
-
-.main-container .sub-container{
-	width: 100%;
-	height: auto;
-}
-
-.main-container .sub-container img{
-	width: 100%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-	z-index: 50;
-	position: relative;
-	margin-bottom: 11px;
+	background-color: black;
 }
 
 .main-container .descri {
@@ -216,11 +201,59 @@ header {
 	animation: fly-in 5s ease-in;
 	animation-direction: alternate;
 	z-index: 40;
-	color: rgba(99,99,102,1);
+	color: white;
+	background-color: black;
 }
 
 .main-container .descri h2{
 	margin: 0 30px 0 30px;
+}
+
+.sub-container {
+	padding: 20px 142px;
+	background-color: black;
+}
+
+.sub-container .text-box{
+	width: 100%;
+	color: white;
+	padding: 20px 0;
+    border-bottom: 0.8px solid rgb(255,255,255);
+}
+
+.sub-container .text-box:nth-child(2){
+    border-bottom: none;
+}
+
+.text-box h2 {
+    font-size: 500%;
+}
+
+.text-box .his-con{
+	padding: 10px 0;
+}
+
+.text-box .his-con h3 {
+    font-size: 250%;
+}
+
+.text-box .his-con p {
+    font-size: 180%;
+}
+
+.text-box ol {
+  font-size: 20px;
+  margin: 20px 15px;
+}
+
+@media (max-width:768px) {
+	.text-box ol{
+		font-size: 16px;
+	}
+}
+
+.text-box ol li {
+  margin: 6px;
 }
 
 @keyframes fly-in {
@@ -251,141 +284,13 @@ header {
 	100%{
 	    left: 0;
 		top: 0px;
-	    background-color: white;
-		color: rgb(142,142,147);
+	    background-color: black;
+		color: white;
 	}
 }
 
-.main-container .slogon {
-	display: block;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	width: 51%;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-}
-
-.main-container .slogon h1{
-	text-align: justify;
-    text-justify: inter-word;
-	font-size: 700%;
-	text-transform: uppercase;
-}
-
-.main-container .slogon h4{
-	text-align: center;
-	font-size: 280%;
-	font-weight: normal;
-}
-
-.main-container .slogon img{
-	height: auto;
-	width: 160px;
-	margin: 15px 0 0 0;
-	position: relative;
-}
-
-.main-container .slogon .btn{
-	height: 28px;
-	width: 80px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 15px;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	border: none;
-	background-color: rgb(0,122,255);
-	color: #fff;
-	border-radius: 22px;
-	font-size: 180%;
-	padding: 4.5px 0;
-}
-
-@media screen and (max-width: 767px){
-	.main-container .slogon .btn{
-	    height: 26px;
-    }
-}
-
-.main-container .slogon .btn:hover{
-	background-color: rgb(10,132,255);
-}
-
-.main-container .slogon .LM a{
-	margin-top: 15px;
-	text-align: center;
-	color: rgb(0,122,255);
-	font-size: 170%;
-}
-
-.main-container .slogon .LM a:hover{
-    text-decoration: underline;
-}
-
-.main-container .sub-container2{
-	width: 100%;
-	height: auto;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	background-color: black;
-	padding: 46px 0 46px 0;
-	color: white;
-	margin-bottom: 11px;
-}
-
-.main-container .sub-container2 h2{
-	font-size: 500%;
-	margin: 0 30px 0 30px;
-}
-
-.main-container .sub-container2 h4{
-	font-size: 280%;
-	font-weight: normal;
-}
-
-#countdown-container {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-#countdown-container ul {
-  padding: 0;
-}
-
-#countdown-container li {
-  display: inline-block;
-  font-size: 2.5vw;
-  list-style-type: none;
-  padding: 1em;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#countdown-container li span {
-  display: block;
-  font-size: 5vw;
-}
-
-@media screen and (max-width: 925px){
-    .main-container .slogon {
-	     width: 60%;
-	     margin-left: auto;
-	     margin-right: auto;
-	     height: auto;
-    }
-}
-
 @media screen and (max-width: 790px){
-    .main-container .slogon {
-	     width: 70%;
-	     margin-left: auto;
-	     margin-right: auto;
-	     height: auto;
-    }
+
 	footer .footer {
 	     padding: 20px 15px;
 		 list-style: none;
@@ -397,36 +302,6 @@ header {
     }
 	footer .footer .footer-items p{
          font-size: 120%;
-    }
-}
-
-
-@media screen and (max-width: 675px){
-    .main-container .slogon {
-	     width: 85%;
-	     margin-left: auto;
-	     margin-right: auto;
-	     height: auto;
-    }
-}
-
-@media screen and (max-width: 555px){
-    .main-container .slogon h1{
-	     font-size: 500%;
-    }
-	.main-container .slogon img{
-	     width: 114px;
-	     margin: 15px 0 0 0;
-    }
-}
-
-@media screen and (max-width: 400px){
-    .main-container .slogon h1{
-	     font-size: 400%;
-    }
-	.main-container .slogon img{
-	     width: 90px;
-	     margin: 10px 0 0 0;
     }
 }
 
@@ -456,7 +331,17 @@ footer{
     border-top: none;
 }
 
+.footer .footer-items:nth-child(2){
+    border-top: none;
+}
+
 .footer .footer-items p{
     font-size: 130%;
 	margin: 10px 0 3px 0;
+}
+
+.footer .footer-items .footer-title{
+    font-size: 130%;
+	margin: 10px 0 3px 0;
+	color: black;
 }
