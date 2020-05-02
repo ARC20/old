@@ -303,6 +303,15 @@ header {
 	footer .footer .footer-items p{
          font-size: 120%;
     }
+	.sub-container {
+	     padding: 20px 0px;
+    }
+	.text-box h2, .text-box h3, .text-box p {
+         margin: 0 20px;
+    }
+	.text-box ol {
+         margin: 20px 35px;
+    }
 }
 
 footer{
