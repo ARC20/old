@@ -323,7 +323,7 @@ header {
 		width: 100%;
 		display: block;
 	}
-	.sub-container .card .card-1 .btn{
+	.sub-container .card .card-1 button{
 		margin-right: auto;
 		margin-left: auto;
 		margin-bottom: 20px;
@@ -366,8 +366,8 @@ header {
 	box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
 
-.card-1 .btn{
-	height: 26px;
+.card-1 button{
+	height: 30px;
 	width: 50px;
 	margin-top: 15px;
 	text-align: center;
@@ -381,13 +381,7 @@ header {
 	text-align: center
 }
 
-@media screen and (max-width: 767px){
-	.card-1 .btn{
-	    height: 26px;
-    }
-}
-
-.card-1 .btn:hover{
+.card-1 button:hover{
 	background-color: rgb(10,132,255);
 }
 
