@@ -216,7 +216,7 @@ header {
 
 .main-container .wrapper .tablinks{
 	display: inline;
-	margin: 10px 10px;
+	margin: 10px 6px;
 }
 
 .main-container .wrapper button{
@@ -228,9 +228,9 @@ header {
     cursor: pointer;
     transition: 0.3s;
     font-size: 16px;
-    border-radius: 12px;
-    height: 60px;
-	width: 100px;
+    border-radius: 20px;
+    height: 40px;
+	width: 105px;
 }
 
 .main-container .wrapper button:hover{
@@ -483,13 +483,14 @@ header {
 .MB-container{
 	width: 100%;
 	height: auto;
-	text-align: left;
+	text-align: center;
 	margin: 20px 0 0 0;
 }
 
 .MB-container ol {
   font-size: 20px;
   margin: 0 70px;
+  text-align: left;
 }
 
 @media (max-width:768px) {
@@ -516,11 +517,9 @@ header {
   color: black;
 }
 
-.MB-container .butt {
-	height: 28px;
-	width: 80px;
-	margin-right: auto;
-	margin-left: auto;
+.MB-container button {
+	height: 30px;
+	width: 60px;
 	margin-top: 15px;
 	text-align: center;
 	align-items: center;
@@ -534,7 +533,7 @@ header {
 }
 
 @media screen and (max-width: 767px){
-	.MB-container .butt {
+	.MB-container button {
 	    height: 26px;
     }
 	.MB-container ol{
@@ -542,7 +541,7 @@ header {
 	}
 }
 
-.MB-container .butt:hover {
+.MB-container button:hover {
 	background-color: rgb(10,132,255);
 }
 
