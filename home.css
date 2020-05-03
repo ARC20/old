@@ -264,6 +264,7 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
+	text-align: center;
 }
 
 .main-container .slogon h1{
@@ -286,11 +287,9 @@ header {
 	position: relative;
 }
 
-.main-container .slogon .btn{
-	height: 28px;
+.main-container .slogon button{
+	height: 30px;
 	width: 80px;
-	margin-right: auto;
-	margin-left: auto;
 	margin-top: 15px;
 	text-align: center;
 	align-items: center;
@@ -303,13 +302,7 @@ header {
 	padding: 4.5px 0;
 }
 
-@media screen and (max-width: 767px){
-	.main-container .slogon .btn{
-	    height: 25px;
-    }
-}
-
-.main-container .slogon .btn:hover{
+.main-container .slogon button:hover{
 	background-color: rgb(10,132,255);
 }
 
