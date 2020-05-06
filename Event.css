@@ -216,19 +216,19 @@ header {
 
 .main-container .wrapper .tablinks{
 	display: inline;
-	margin: 10px 6px;
+	margin: 10px 5px;
 }
 
 .main-container .wrapper button{
 	display: block;
-    background-color: rgb(209,209,214);
+    background-color: initial;
     color: black;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
     font-size: 16px;
-    border-radius: 20px;
+    border-radius: 16px;
     height: 40px;
 	width: 105px;
 }
@@ -238,8 +238,8 @@ header {
 }
 
 .main-container .wrapper button.active{
-    background-color: rgb(0,122,255);
-	color: white;
+    background-color: white;
+	color: rgb(0,122,255);
 }
 
 .main-container .tabcontent {
@@ -260,19 +260,19 @@ header {
 
 .wrapper2 .tablinks2{
 	display: inline;
-	margin: 10px 12px;
+	margin: 10px 5px;
 }
 
 .wrapper2 button{
 	display: block;
-    background-color: rgb(209,209,214);
+    background-color: initial;
     color: black;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
     font-size: 16px;
-    border-radius: 18px;
+    border-radius: 14px;
     height: 30px;
 	width: 60px;
 }
