@@ -210,14 +210,14 @@ header {
 }
 
 .sub-container {
-	padding: 20px 142px;
+	padding: 30px 142px;
 	background-color: black;
 }
 
 .sub-container .text-box{
 	width: 100%;
 	color: white;
-	padding: 20px 0;
+	padding: 40px 0;
     border-bottom: 0.8px solid rgb(255,255,255);
 }
 
@@ -340,6 +340,11 @@ header {
     margin: 0 5px 0 5px;
 }
 
+.sub-container2 .column .img{
+	border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
 @media screen and (max-width: 790px){
 
 	footer .footer {
@@ -370,8 +375,8 @@ header {
          margin: 0 20px;
     }
 	.sub-container2 .column{
-	    width: 50%;
-	    padding: 0;
+	    width: 48%;
+	    padding: 3px;
     }
 	.sub-container2 .blank{
 	    display: none;

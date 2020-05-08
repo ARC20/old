@@ -381,6 +381,12 @@ header {
 	margin: 0 30px 0 30px;
 }
 
+.main-container .sub-container2 .cny{
+	background: -webkit-linear-gradient(135deg, #111A21, #A9081C, #716360);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .main-container .sub-container2 h4{
 	font-size: 280%;
 	font-weight: normal;
@@ -460,6 +466,14 @@ header {
   width: 32.5%;
 }
 
+.column img{
+	border-radius: 12px;
+}
+
+.column2 img{
+	border-radius: 12px;
+}
+
 @media only screen and (max-width: 768px) {
   .column {
     width: 100%
@@ -477,6 +491,9 @@ header {
   .row,
   .row > .column2 {
     padding: 10px 0;
+  }
+  .row{
+	  padding: 0 10px;
   }
 }
 
