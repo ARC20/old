@@ -190,7 +190,6 @@ header {
 
 .main-container {
 	width: 100%;
-	background-color: black;
 }
 
 .main-container .descri {
@@ -209,15 +208,24 @@ header {
 	margin: 0 30px 0 30px;
 }
 
+.BI img{
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	align-items:center;
+	justify-content: center;
+	width: 100%;
+}
+
 .sub-container {
 	padding: 30px 142px;
-	background-color: black;
+	backdrop-filter: blur(14px);
 }
 
 .sub-container .text-box{
 	width: 100%;
 	color: white;
-	padding: 40px 0;
+	padding: 20px 0;
     border-bottom: 0.8px solid rgb(255,255,255);
 }
 
@@ -290,7 +298,7 @@ header {
 }
 
 .sub-container2 {
-	padding: 40px 142px;
+	padding: 20px 142px;
 	background-color: white;
 	color: black;
 	overflow: auto;
