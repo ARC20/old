@@ -387,6 +387,24 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
+.main-container .sub-container2 .c1{
+    color: #fffbc2;
+	margin: 0;
+	font-size: 110%;
+}
+
+.main-container .sub-container2 .c2{
+    color: #ffc7c5;
+	margin: 0;
+	font-size: 110%;
+}
+
+.main-container .sub-container2 .c3{
+    color: #a8e3fe;
+	margin: 0;
+	font-size: 110%;
+}
+
 .main-container .sub-container2 h4{
 	font-size: 280%;
 	font-weight: normal;
