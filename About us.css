@@ -322,9 +322,9 @@ header {
 
 .sub-container2 .column{
 	float: left;
-	width: 23.8%;
+	width: 23.7%;
 	padding: 4px;
-	min-height: 485px;
+	min-height: 680px;
 }
 
 .sub-container2 .column .img{
@@ -333,7 +333,7 @@ header {
 
 .sub-container2 .column .blankimg{
 	width: 100%;
-	height: 485px;
+	height: 680px;
 }
 
 .sub-container2 .column h3{
@@ -352,6 +352,24 @@ header {
 .sub-container2 .column .img{
 	border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+@media screen and (max-width: 1220px){
+	.sub-container2 .column{
+	    padding: 3px;
+		min-height: 480px;
+    }
+}
+
+@media screen and (max-width: 910px){
+	.sub-container2 .column{
+	    width: 30%;
+	    padding: 3px;
+		min-height: 480px;
+    }
+	.sub-container2 .blank2{
+	    display: none;
+    }
 }
 
 @media screen and (max-width: 790px){
@@ -386,6 +404,7 @@ header {
 	.sub-container2 .column{
 	    width: 48%;
 	    padding: 3px;
+		min-height: 480px;
     }
 	.sub-container2 .blank{
 	    display: none;
