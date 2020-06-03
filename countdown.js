@@ -17,5 +17,5 @@ let countDown = new Date('June 9, 2020 00:00:00').getTime(),
   // If the count down is over, write some text 
         if (distance < 0) {
         clearInterval(x); 
-        document.getElementById("countdown-container").style.display='none'; } 
+        document.getElementById("sub-container2").style.display='none'; } 
     }, second)
