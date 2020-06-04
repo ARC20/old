@@ -202,6 +202,26 @@ header {
 	height: auto;
 }
 
+.main-container .sub-container h2{
+	font-size: 600%;
+	margin: 0 15px 0 15px;
+	text-align: center;
+	padding: 40px 0 0 0;
+}
+
+.main-container .sub-container h4{
+	font-size: 280%;
+	font-weight: normal;
+	text-align: center;
+}
+
+.main-container .sub-container p{
+	font-size: 260%;
+	color: rgb(142,142,147);
+	margin: 5px 0;
+	text-align: center;
+}
+
 .main-container .sub-container img{
 	width: 100%;
 	display: block;
