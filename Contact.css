@@ -257,14 +257,11 @@ header {
 }
 
 .sub-container h1{
-	font-size: 500%;
-	background: -webkit-linear-gradient(315deg, #386E72, #95C5C8, #F0C0AA);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	font-size: 480%;
 }
 
 .sub-container .card{
-	height: auto;
+	height: 350px;
 	border-radius: 12px;
 	background-color: white;
 	box-shadow: 0 5px 15px rgba(0,0,0,.15);
@@ -287,18 +284,15 @@ header {
 .sub-container .card .card-2 .fbimg{
 	width: 260px;
 	height: auto;
-	box-shadow: 0 5px 15px rgba(0,0,0,.8);
-	border-radius: 22px 22px 0 0;
 	float: right;
 	transition: 1s;
 }
 
 @media screen and (max-width: 772px){
-	.card{
+	.sub-container .card{
 		display: flex;
 		flex-direction: column;
-		height: 700px;
-		justify-content:center;
+		height: 500px;
 		align-items: center;
 		text-align: center;
 	}
