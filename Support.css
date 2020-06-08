@@ -257,10 +257,7 @@ header {
 }
 
 .sub-container h1{
-	font-size: 500%;
-	background: -webkit-linear-gradient(315deg, #A76B56, #EDBCB1, #7E8071, #808C97);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	font-size: 480%;
 }
 
 .sub-container .card{
