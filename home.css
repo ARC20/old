@@ -413,7 +413,8 @@ header {
 	font-size: 18px;
 	margin: 0 20px;
 	font-weight: normal;
-	margin: 15px 5px 0 0;
+	margin: 15px 0 0 0;
+	padding: 0 10px;
 }
 
 .main-container .sub-container3 #countdown-container ul{
@@ -452,6 +453,9 @@ header {
 	.main-container .sub-container3 #countdown-container li span{
 		font-size: 13px;
 		margin: 0;
+	}
+	.main-container .sub-container3 h1{
+		font-size: 12px;
 	}
 }
 
