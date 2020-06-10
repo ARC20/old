@@ -387,6 +387,62 @@ header {
 	font-size: 5vw;
 }
 
+.main-container .sub-container3{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	padding: 10px 0 10px 0;
+	color: white;
+	background-image: linear-gradient(-45deg, #F7F102, #FCC272, #8889CB);
+	display: inline-flex;
+	border-radius: 18px 18px 0 0;
+}
+
+.main-container .sub-container3 h2{
+	font-size: 22px;
+	margin: 0 20px;
+
+}
+
+.main-container .sub-container3 #countdown-container ul{
+	padding: 0;
+	margin: 0 20px;
+}
+
+.main-container .sub-container3 #countdown-container li{
+	display: inline-flex;
+	font-size: 22px;
+	list-style-type: none;
+	padding: 10px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.main-container .sub-container3 #countdown-container li span{
+	display: block;
+	font-size: 22px;
+	margin: 0 5px;
+}
+
+@media screen and (max-width: 1072px){
+	.main-container .sub-container3{
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width:  636px){
+	.main-container .sub-container3 #countdown-container li{
+		font-size: 12px;
+		padding: 5px;
+	}
+	.main-container .sub-container3 #countdown-container li span{
+		font-size: 12px;
+	}
+}
+
 @media screen and (max-width: 925px){
 	.main-container .slogon {
 		width: 60%;
