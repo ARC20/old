@@ -430,16 +430,19 @@ header {
 @media screen and (max-width: 1072px){
 	.main-container .sub-container3{
 		display: inline-block;
+		padding: 20px 0;
 	}
 }
 
 @media screen and (max-width:  636px){
 	.main-container .sub-container3 #countdown-container li{
-		font-size: 12px;
+		font-size: 13px;
 		padding: 5px;
+		display: inline-block;
 	}
 	.main-container .sub-container3 #countdown-container li span{
-		font-size: 12px;
+		font-size: 13px;
+		margin: 0;
 	}
 }
 
