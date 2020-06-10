@@ -282,7 +282,6 @@ header {
 }
 
 .main-container .slogon {
-	display: block;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	width: 51%;
@@ -290,6 +289,8 @@ header {
 	margin-right: auto;
 	height: auto;
 	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .main-container .slogon h1{
@@ -300,7 +301,6 @@ header {
 }
 
 .main-container .slogon h4{
-	text-align: center;
 	font-size: 280%;
 	font-weight: normal;
 }
@@ -316,13 +316,13 @@ header {
 	height: 30px;
 	width: 80px;
 	margin-top: 15px;
-	text-align: center;
 	border: none;
 	background-color: rgb(0,122,255);
 	color: #fff;
 	border-radius: 22px;
 	font-size: 180%;
 	padding: 4.5px 0;
+	cursor: pointer;
 }
 
 .main-container .slogon button:hover{
@@ -331,7 +331,6 @@ header {
 
 .main-container .slogon .LM a{
 	margin-top: 15px;
-	text-align: center;
 	color: rgb(0,122,255);
 	font-size: 170%;
 }
@@ -394,17 +393,27 @@ header {
 	align-items: center;
 	justify-content: center;
 	background-color: black;
-	padding: 10px 0 10px 0;
+	padding: 30px 0 30px 0;
 	color: white;
 	background-image: linear-gradient(-45deg, #F7F102, #FCC272, #8889CB);
-	display: inline-flex;
+	display: inline-block;
 	border-radius: 18px 18px 0 0;
 }
 
 .main-container .sub-container3 h2{
-	font-size: 22px;
+	font-size: 40px;
 	margin: 0 20px;
+}
 
+.main-container .sub-container3 h2 small{
+	color: rgba(174,174,178,.5);
+}
+
+.main-container .sub-container3 h1{
+	font-size: 18px;
+	margin: 0 20px;
+	font-weight: normal;
+	margin: 15px 5px 0 0;
 }
 
 .main-container .sub-container3 #countdown-container ul{

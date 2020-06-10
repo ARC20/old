@@ -439,6 +439,7 @@ header {
 	border-radius: 22px;
 	font-size: 180%;
 	padding: 4.5px 0;
+	cursor: pointer;
 }
 
 .main-container .sub-container2 button:hover{
@@ -483,7 +484,7 @@ header {
 
 .image-box {
 	min-height: 300px;
-	margin: 14.5px 29px;
+	margin: 14.5px 0;
 	display: block;
 	position: relative;
 	overflow: auto;
@@ -496,23 +497,23 @@ header {
 /* Add padding BETWEEN each column */
 .row,
 .row > .column {
-	padding: 4px;
+	padding: 0.5%;
 }
 
 .row,
 .row > .column2 {
-	padding: 4px;
+	padding: 0.5%;
 }
 
 /* Create two equal columns that floats next to each other */
 .column {
 	float: left;
-	width: 49.2%;
+	width: 49%;
 }
 
 .column2 {
 	float: left;
-	width: 32.5%;
+	width: 32.33%;
 }
 
 .column img{
