@@ -10,8 +10,14 @@ html{
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	background-color: black;
+	  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	  font-size: 17px;
+	  line-height: 1.47050;
+	  font-weight: 400;
+	  letter-spacing: .022em;
+	  color: #1d1d1f;
+	  font-style: normal;
+	  background-color: black;
 }
 
 a{
@@ -20,19 +26,20 @@ a{
 }
 
 .container {
-	max-width: 96rem;
+	max-width: 980px;
 	margin: 0 auto;
-	padding: 0 2.2rem;
+	padding: 0 22px;
 }
 
 header {
 	position: fixed;
 	top: 0;
 	z-index: 1400;
-	height: 4.4rem;
+	height: 44px;
 	width: 100%;
 	background-color: rgba(0,0,0,.8);
-	backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 .nav-list {
@@ -40,7 +47,6 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 6px -1rem;
 }
 
 .nav-list-mobile{
@@ -48,10 +54,16 @@ header {
 }
 
 .nav-link {
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: rgba(209,209,214);
-	padding: 0 1rem;
 	transition: .5s;
+	height: 44px;
+	line-height: 3.14286;
+	font-weight: 400;
+	letter-spacing: -.01em;
+	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	padding: 0 10px;
+	opacity: .8;
 }
 
 .nav-link:hover{
@@ -59,17 +71,16 @@ header {
 }
 
 .nav-link-logo{
-	width: 32px;
-	height: 27px;
+	width: 52px;
+	height: 44px;
 	background: url('images/icons/logo5.png') center no-repeat;
 	filter: brightness(0) invert(1);
 }
 
 @media screen and (max-width: 767px){
 	header{
-		height: 4.8rem;
-		transition: background .36s cubic-bezier(0.32,0.08,0.24,1),
-		height .56s cubic-bezier(0.32,0.08,0.24,1);
+		height: 48px;
+		transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1), height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
 	}
 	header .container{
 		padding: 0;
@@ -81,10 +92,10 @@ header {
 		display: flex;
 	}
 	.nav-item{
-		width: 6rem;
-		height: 4.8rem;
+		width: 55px;
+		height: 44px;
 		display: flex;
-		justify-content; center;
+		justify-content: center;
 	}
 	.nav-item-hidden{
 		display:none;
@@ -102,27 +113,46 @@ header {
 	}
 	.line{
 		position: absolute;
-		width: 1.7rem;
-		height: 1px;
-		background-color: #fff;
+		background: #fff;
 		transition: .5s cubic-bezier(0.04,0.04,0.12,0.96);
-		margin: 0 0 0 -5px;
+		display: block;
+	    width: 17px;
+	    height: 1px;
+	    border-radius: 0.5px;
+	    z-index: 1;
+	    margin: 0 0 0 -3px;
 	}
 	.line-top{
-		margin-top: 3px;
+		top: 21.5px;
+	    -webkit-transform: translateY(-3.5px);
+	    transform: translateY(-3.5px);
+	    -webkit-transition: -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s, -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
 	}
 	.line-bottom{
-		margin-top: -0.4rem;
+		bottom: 21.5px;
+	    -webkit-transform: translateY(3.5px);
+	    transform: translateY(3.5px);
+	    -webkit-transition: -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s, -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
 	}
 	.active .line-top{
-		margin-top: 0;
 		transform: rotate(45deg);
-		transition: transform .3192s .1s cubic bezier(0.04,0.04,0.12,0.96);
+		-webkit-transition: -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s, -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
 	}
 	.active .line-bottom{
-		margin-top: 0;
 		transform: rotate(-45deg);
-		transition: transform .3192s .1s cubic bezier(0.04,0.04,0.12,0.96);
+		-webkit-transition: -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+	    transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s, -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
 	}
 	header.active{
 		height: 100%;
@@ -130,7 +160,7 @@ header {
 	}
 	.nav-link-logo{
 		width: 60px;
-		height: 28px;
+		height: 44px;
 		position: relative;
 		z-index: 1500;
 	}
@@ -138,8 +168,9 @@ header {
 		position: relative;
 	}
 	.nav-link{
-		font-size: 1.7rem;
+		font-size: 17px;
 		padding: 0;
+		line-height: 2.6;
 		margin: auto 0;
 	}
 	.nav-list-larger{
@@ -149,7 +180,7 @@ header {
 		width: 0;
 		height: 0;
 		display: block;
-		padding: 11rem 5rem;
+		padding: 106px 40px 8px 40px;
 		z-index: 1000;
 		box-sizing: border-box;
 		opacity: 0;
@@ -165,14 +196,43 @@ header {
 	.nav-list-larger .nav-item{
 		width: 100%;
 		justify-content: flex-start;
-		border-bottom: 2px solid rgba(255,255,255,.1);
-		height: 4.1rem;
+		border-bottom: 1px solid #424245;
+		height: 43px;
 	}
 	.nav-list-larger .nav-item:nth-child(9){
 		border-bottom: none;
 	}
 	.active .nav-list-larger .nav-item{
 		animation: fadeIn 1s ease-in;
+	}
+	.notice-box{
+		margin: -55px -30px 0 -30px;
+		display: block;
+		height: 0;
+		max-width: 584px;
+		padding: 0;
+		outline-offset: 0;
+		opacity: 1;
+		border-radius: 8px;
+		background-color: rgba(20,20,22);
+		color: rgba(99,99,102);
+		transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1), height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
+		animation: fadeIn 2s ease-in;
+	}
+	.notice-box p{
+		text-align: center;
+		line-height: 0;
+		display: none;
+		transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1), height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
+		animation: fadeIn 1s ease-in;
+	}
+	.active .notice-box{
+		height: 2.11765em;
+	}
+	.active .notice-box p{
+		text-align: center;
+		line-height: 2.11;
+		display: block;
 	}
 	@keyframes fadeIn {
 		from{
@@ -186,7 +246,7 @@ header {
 
 .blank{
 	width: 100%;
-	height: 4.4rem;
+	height: 44px;
 }
 
 .main-container {
@@ -228,7 +288,7 @@ header {
 	color: white;
 	padding: 20px 0;
 	border-bottom: 0.8px solid rgb(255,255,255);
-	max-width: 138.5rem;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -237,7 +297,31 @@ header {
 }
 
 .text-box h2 {
-	font-size: 500%;
+	font-size: 110px;
+    line-height: .81838;
+    font-weight: 700;
+    letter-spacing: -.009em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+@media only screen and (max-width: 1068px){
+	.text-box h2 {
+	    font-size: 80px;
+	    line-height: .925;
+	    font-weight: 700;
+	    letter-spacing: -.009em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+}
+
+@media only screen and (max-width: 734px){
+	.text-box h2 {
+	    font-size: 48px;
+	    line-height: 1.08349;
+	    font-weight: 700;
+	    letter-spacing: -.003em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
 }
 
 .text-box .his-con{
@@ -245,21 +329,67 @@ header {
 }
 
 .text-box .his-con h3 {
-	font-size: 250%;
+	font-size: 34px;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+@media only screen and (max-width: 1068px){
+	.text-box .his-con h3 {
+	    font-size: 24px;
+	    line-height: 1.16667;
+	    font-weight: 600;
+	    letter-spacing: .009em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
 }
 
 .text-box .his-con p {
-	font-size: 180%;
+	font-size: 32px;
+    line-height: 1.25;
+    font-weight: 300;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+@media only screen and (max-width: 1068px){
+	.text-box .his-con p {
+	    font-size: 24px;
+	    line-height: 1.16667;
+	    font-weight: 400;
+	    letter-spacing: .009em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
 }
 
 .text-box ol {
-	font-size: 20px;
-	margin: 20px 15px;
+	margin: 20px 40px;
+	font-size: 32px;
+    line-height: 1.25;
+    font-weight: 300;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-@media (max-width:768px) {
-	.text-box ol{
-		font-size: 16px;
+@media only screen and (max-width: 1068px){
+	.text-box ol {
+	    font-size: 24px;
+	    line-height: 1.16667;
+	    font-weight: 400;
+	    letter-spacing: .009em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+}
+
+@media only screen and (max-width: 734px){
+	.text-box ol {
+	    font-size: 24px;
+	    line-height: 1.16667;
+	    font-weight: 400;
+	    letter-spacing: .009em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 	}
 }
 
@@ -308,14 +438,38 @@ header {
 }
 
 .sub-container2 h2{
-	font-size: 500%;
 	left: 0;
+	font-size: 56px;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+}
+
+@media only screen and (max-width: 1068px){
+	.sub-container2 h2{
+	    font-size: 44px;
+	    line-height: 1.09091;
+	    font-weight: 600;
+	    letter-spacing: -.002em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+}
+
+@media only screen and (max-width: 734px){
+	.sub-container2 h2{
+	    font-size: 32px;
+	    line-height: 1.125;
+	    font-weight: 600;
+	    letter-spacing: .004em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
 }
 
 .sub-container2 .break{
 	width: 100;
 	position: relative;
-	max-width: 138.5rem;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -342,16 +496,64 @@ header {
 }
 
 .sub-container2 .column h3{
-	font-size: 200%;
-	padding: 20px 0 0 0;
+	padding: 15px 0 0 0;
 	text-align: center;
 	margin: 0 5px 0 5px;
+	font-size: 28px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+@media only screen and (max-width: 1068px){
+	.sub-container2 .column h3{
+	    font-size: 22px;
+	    line-height: 1.09091;
+	    font-weight: 600;
+	    letter-spacing: -.002em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+}
+
+@media only screen and (max-width: 734px){
+	.sub-container2 .column h3{
+	    font-size: 16px;
+	    line-height: 1.125;
+	    font-weight: 600;
+	    letter-spacing: .004em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
 }
 
 .sub-container2 .column p{
-	font-size: 160%;
 	text-align: center;
-	margin: 0 5px 0 5px;
+	margin: 3px 5px;
+	font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+@media only screen and (max-width: 1068px){
+	.sub-container2 .column p{
+	    font-size: 17px;
+	    line-height: 1.09091;
+	    font-weight: 400;
+	    letter-spacing: -.002em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+}
+
+@media only screen and (max-width: 734px){
+	.sub-container2 .column p{
+	    font-size: 13px;
+	    line-height: 1.125;
+	    font-weight: 400;
+	    letter-spacing: .004em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
 }
 
 .sub-container2 .column .img{
@@ -377,7 +579,7 @@ header {
 @media screen and (max-width: 790px){
 
 	footer .footer {
-		padding: 20px 15px;
+		padding: 17px 16px 19px 16px;
 		list-style: none;
 		align-items: center;
 	}
@@ -385,17 +587,11 @@ header {
 		border-top: 0.8px solid rgb(199,199,204);
 		height: auto;
 	}
-	footer .footer .footer-items p{
-		font-size: 120%;
-	}
 	.sub-container {
 		padding: 20px 0px;
 	}
 	.text-box h2, .text-box h3, .text-box p {
 		margin: 0 20px;
-	}
-	.text-box ol {
-		margin: 20px 35px;
 	}
 	.sub-container2 {
 		padding: 40px 0px;
@@ -422,14 +618,18 @@ footer{
 .footer {
 	list-style: none;
 	align-items: center;
-	padding: 20px 15px;
-	max-width: 138.5rem;
+	padding: 34px 22px 21px 22px;
+	max-width: 980px;
 	margin: 0 auto;
 }
 
 .footer .ann{
-	font-size: 120%;
+	font-size: 12px;
 	color: rgb(142,142,147);
+	line-height: 1.33337;
+	font-weight: 400;
+	letter-spacing: -.01em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .footer .footer-items{
@@ -437,8 +637,13 @@ footer{
 	justify-content: flex-start;
 	border-top: 0.8px solid rgb(199,199,204);
 	height: 20px;
-	color: rgb(142,142,147);
+	color: #86868B;
 	margin: 0 0 10px 0;
+	font-size: 12px;
+	line-height: 1.33337;
+	font-weight: 400;
+	letter-spacing: -.01em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .footer .footer-items:nth-child(1){
@@ -454,14 +659,30 @@ footer{
 }
 
 .footer .footer-items p{
-	font-size: 130%;
 	margin: 10px 0 3px 0;
 }
 
 .footer .footer-items .footer-title{
-	font-size: 130%;
+	font-size: 12px;
 	margin: 10px 0 3px 0;
 	color: black;
+	line-height: 1.33337;
+	font-weight: 400;
+	letter-spacing: -.01em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.footer .footer-items .footer-title .arrow{
+  border: solid rgb(209,209,214);
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  margin: 0 5px 0 0;
+}
+
+.footer .footer-items .footer-title .right{
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 }
 
 /* Scroll to Top */
