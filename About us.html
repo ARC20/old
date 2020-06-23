@@ -209,6 +209,9 @@
     <footer>
         <ul class="footer">
             <p class="ann">*The images order has nothing to do with ranking.</p>
+            <li class="footer-items2">
+                <span id="date"></span>
+            </li>
             <li class="footer-items">
                 <p class="footer-title">Home <i class="arrow right"></i> About Us</p>
             </li>
@@ -221,5 +224,27 @@
         </ul>
     </footer>
     <script src="countdown.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var day = d.getDay();
+      var dayarr =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      day=dayarr[day];
+      
+      var year = d.getFullYear();
+    
+      document.getElementById("date").innerHTML=date+" "+month+" "+year+", "+day;
+    }
+</script>
 </body>
 </html>

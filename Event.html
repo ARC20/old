@@ -91,6 +91,9 @@
             </div>
             <footer>
                 <ul class="footer">
+                    <li class="footer-items2">
+                        <span id="date"></span>
+                    </li>
                     <li class="footer-items">
                         <p class="footer-title">Home <i class="arrow right"></i> Event</p>
                     </li>
@@ -189,6 +192,9 @@
 
                 <footer>
                     <ul class="footer">
+                        <li class="footer-items2">
+                            <span id="date2"></span>
+                        </li>
                         <li class="footer-items">
                             <p class="footer-title">Home <i class="arrow right"></i> Event Photo <i class="arrow right"></i> 2019</p>
                         </li>
@@ -245,6 +251,9 @@
 
                 <footer>
                     <ul class="footer">
+                        <li class="footer-items2">
+                            <span id="date3"></span>
+                        </li>
                         <li class="footer-items">
                             <p class="footer-title">Home <i class="arrow right"></i> Event Photo <i class="arrow right"></i> 2020</p>
                         </li>
@@ -285,6 +294,9 @@
                 <ul class="footer2">
                     <p class="ann">*Submit the Registration Form with fee to Advisor or Any Committee Member.</p>
                     <p class="ann">**Member price is RM10. For non-member is RM15. (Price may be changed)</p>
+                    <li class="footer-items3">
+                            <span id="date4"></span>
+                        </li>
                     <li class="footer-items2">
                         <p class="footer-title2">Home <i class="arrow right"></i> Event <i class="arrow right"></i> Membership</p>
                     </li>
@@ -342,6 +354,31 @@ document.getElementById("defaultOpen").click();
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("DOpen").click();
+</script>
+<script type="text/javascript">
+window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var day = d.getDay();
+      var dayarr =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      day=dayarr[day];
+      
+      var year = d.getFullYear();
+    
+      document.getElementById("date").innerHTML=date+" "+month+" "+year+", "+day;
+      document.getElementById("date2").innerHTML=date+" "+month+" "+year+", "+day;
+      document.getElementById("date3").innerHTML=date+" "+month+" "+year+", "+day;
+      document.getElementById("date4").innerHTML=date+" "+month+" "+year+", "+day;
+    }
 </script>
 </body>
 </html>

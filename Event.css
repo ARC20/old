@@ -902,11 +902,46 @@ footer{
 	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+.footer .footer-items2{
+	width: 100%;
+	justify-content: flex-start;
+	height: 20px;
+	color: #86868B;
+	margin: 15px 0 20px 0;
+	font-size: 12px;
+	line-height: 1.33337;
+	font-weight: 400;
+	letter-spacing: -.01em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.footer .footer-items2 span{
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    min-width: 28px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 18px;
+    background: rgb(255,69,58);
+    color: #fff;
+    border: none;
+}
+
 .footer .footer-items:nth-child(1){
 	border-top: none;
 }
 
 .footer .footer-items:nth-child(2){
+	border-top: none;
+}
+
+.footer .footer-items:nth-child(3){
 	border-top: none;
 }
 
@@ -969,6 +1004,37 @@ footer{
 	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+.footer2 .footer-items3{
+	width: 100%;
+	justify-content: flex-start;
+	height: 20px;
+	color: #86868B;
+	margin: 15px 0 20px 0;
+	font-size: 12px;
+	line-height: 1.33337;
+	font-weight: 400;
+	letter-spacing: -.01em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.footer2 .footer-items3 span{
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    min-width: 28px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 18px;
+    background: rgb(255,69,58);
+    color: #fff;
+    border: none;
+}
+
 .footer2 .footer-items2:nth-child(1){
 	border-top: none;
 }
@@ -982,6 +1048,10 @@ footer{
 }
 
 .footer2 .footer-items2:nth-child(4){
+	border-top: none;
+}
+
+.footer2 .footer-items2:nth-child(5){
 	border-top: none;
 }
 
