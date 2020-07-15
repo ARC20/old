@@ -624,6 +624,30 @@ header {
 	background-color: rgb(10,132,255);
 }
 
+.main-container .sub-container2 .btn-2{
+	cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    min-width: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 18px;
+    background: rgb(255,204,0);
+    color: #fff;
+    border: none;
+    margin: 20px 0 0 0;
+}
+
+.main-container .sub-container2 .btn-2:hover{
+	background-color: rgb(255,214,10);
+}
+
 .main-container .sub-container3{
 	width: 100%;
 	height: auto;
