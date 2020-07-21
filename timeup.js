@@ -1,4 +1,4 @@
-let CD = new Date('June 26, 2020 00:00:00').getTime(),
+let CD = new Date('July 23, 2020 00:00:00').getTime(),
     y = setInterval(function() {
 
       let N = new Date().getTime();
