@@ -327,12 +327,13 @@ header {
 }
 
 .wrapper2 .wrapper2-box{
-	background-color: rgba(0,0,0,.9);
+	background-color: rgba(0,0,0,.8);
 	height: auto;
-	width: 125px;
+	width: 155px;
+	padding: 2px;
 	margin: 0 auto;
-	padding: 4px;
-	border-radius: 10px;
+	border-radius: 20px;
+	overflow: auto;
 }
 
 .wrapper2 .wrapper2-box .tablinks2{
@@ -348,9 +349,10 @@ header {
 	cursor: pointer;
 	transition: 0.3s;
 	font-size: 16px;
-	border-radius: 8px;
-	height: 30px;
-	width: 60px;
+	border-radius: 18px;
+	height: 42px;
+	width: 75px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
 
 .wrapper2 button:hover{
@@ -578,6 +580,7 @@ header {
     line-height: 1.10722;
     font-weight: 400;
     letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 @media only screen and (max-width: 1068px){
@@ -951,7 +954,7 @@ footer{
     padding-right: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-radius: 18px;
+    border-radius: 6px;
     background: rgb(255,69,58);
     color: #fff;
     border: none;
@@ -1053,7 +1056,7 @@ footer{
     padding-right: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-radius: 18px;
+    border-radius: 6px;
     background: rgb(255,69,58);
     color: #fff;
     border: none;

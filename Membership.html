@@ -1,0 +1,130 @@
+<!doctype html>
+<html lanf="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equlv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ARC - Membership</title>
+    <link rel="icon" href="images/icons/logo5.png" type="image/icon type">
+    <link rel="stylesheet" href="Membership.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <span class="line line-top"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-logo"></a>
+                    </li>
+                </ul>
+                <ul class="nav-list nav-list-mobile nav-list-larger">
+                    <li class="notice-box">
+                        <div class="notice">
+                            <p>⚠ Press the logo back to Home</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Event.html" class="nav-link">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About us.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Support.html" class="nav-link">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Membership.html" class="nav-link">Membership</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script src="main.js"></script>
+
+<div class="main-container">
+    <div class="sub-container">
+        <img alt="img" src="images/Membership/deco03.jpg">
+        <div class="text-box">
+            <h1>MEMBERSHIP</h1>
+        </div>
+    </div>
+    <div class="sub-container2">
+        <h2>Member Should Know*</h2>
+        <div class="MB-container">
+            <ol>
+                <li>The club’s membership is open to all undergraduate students at the Institute. The club’s membership cannot be exclusive and must be open to all undergraduate students;</li>
+                <li>Any non-undergraduate student members, including staff members, do not have voting rights;</li>
+                <li>Executive members, voting and non-voting, shall be undergraduate students;</li>
+                <li>The membership fee is payable once for the lifetime as an institute student; and,</li>
+                <li>All undergraduate members shall be entitled to all rights and privileges of the club, such as:</li>
+                <ul>
+                    <li>Voting in Annual General Meeting (AGM)</li>
+                    <li>Has the chance to become committee member; and</li>
+                    <li>Enjoy member price** for every single event held by MPI Accounting Recreational Club.</li>
+                </ul>
+            </ol>
+            <br>
+            <h6>Click on the button below to download Registration Form.</h6>
+            <a href="images/Event/ARC Membership Registration Form.pdf" download class="butt"><button>Get</button></a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <ul class="footer2">
+        <p class="ann">*Submit the Registration Form with fee to Advisor or Any Committee Member.</p>
+        <p class="ann">**Member price is RM10. For non-member is RM15. (Price may be changed)</p>
+        <li class="footer-items3">
+                <span id="date"></span>
+            </li>
+        <li class="footer-items2">
+            <p class="footer-title2">Home <i class="arrow right"></i>  Membership</p>
+        </li>
+        <li class="footer-items2">
+            <p>Any question: Find a advisor or committee. Or email arclub20@gmail.com.</p>
+        </li>
+        <li class="footer-items2">
+            <p>Copyright © 2020 Accounting Recreational Club. All Rights Reserved.</p>
+        </li>
+    </ul>
+</footer>
+
+<script type="text/javascript">
+window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+      var d = new Date();
+      
+      var date = d.getDate();
+      
+      var month = d.getMonth();
+      var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+      month=montharr[month];
+      
+      var day = d.getDay();
+      var dayarr =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      day=dayarr[day];
+      
+      var year = d.getFullYear();
+    
+      document.getElementById("date").innerHTML=date+" "+month+" "+year+", "+day;
+    }
+</script>
+</body>
+</html>

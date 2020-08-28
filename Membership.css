@@ -48,7 +48,7 @@ header {
 	justify-content: space-between;
 }
 
-.nav-list-mobile {
+.nav-list-mobile{
 	display: none;
 }
 
@@ -243,26 +243,83 @@ header {
 	}
 }
 
-.blank{
+.main-container .sub-container{
 	width: 100%;
-	height: 44px;
+	height: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	padding: 44px 0 0 0;
+	color: black;
+	width: auto;
 }
 
-.main-container {
+.main-container .sub-container img{
+	height: auto;
 	width: 100%;
 }
 
-.sub {
+.main-container .sub-container .text-box{
+	max-width: 400px;
+	margin: 0 auto;
+	height: auto;
+	border-radius: 6px;
+	backdrop-filter: blur(12px);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: -100px;
+}
+
+.main-container .sub-container .text-box h1{
+	margin: 0 15px 0 15px;
+	text-align: center;
+	font-size: 60px;
+    line-height: 1.07143;
+    font-weight: 700;
+    letter-spacing: -.005em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+@media only screen and (max-width: 1068px){
+	.main-container .sub-container .text-box h1{
+	    font-size: 48px;
+	    line-height: 1.09091;
+	    font-weight: 600;
+	    letter-spacing: -.002em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+}
+
+@media only screen and (max-width: 734px){
+	.main-container .sub-container .text-box h1{
+	    font-size: 36px;
+	    line-height: 1.125;
+	    font-weight: 600;
+	    letter-spacing: .004em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+	.main-container .sub-container .text-box{
+		margin-top: -50px;
+	}
+}
+
+.main-container .sub-container2{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	padding: 46px 0 46px 0;
+	color: black;
+	margin-bottom: 11px;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-.main-container .sub-container{
-	width: 100%;
-	height: auto;
-}
-
-.main-container .sub-container h2{
+.main-container .sub-container2 h2{
 	margin: 0 15px 0 15px;
 	text-align: center;
 	padding: 47px 0 0 0;
@@ -274,28 +331,26 @@ header {
 }
 
 @media only screen and (max-width: 1068px){
-	.main-container .sub-container h2{
+	.main-container .sub-container2 h2{
 	    font-size: 44px;
 	    line-height: 1.09091;
 	    font-weight: 600;
 	    letter-spacing: -.002em;
 	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-		padding: 57px 0 0 0;
 	}
 }
 
 @media only screen and (max-width: 734px){
-	.main-container .sub-container h2{
+	.main-container .sub-container2 h2{
 	    font-size: 32px;
 	    line-height: 1.125;
 	    font-weight: 600;
 	    letter-spacing: .004em;
 	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-		padding: 37px 0 0 0;
 	}
 }
 
-.main-container .sub-container h4{
+.main-container .sub-container2 h4{
 	text-align: center;
     font-size: 28px;
     line-height: 1.10722;
@@ -305,7 +360,7 @@ header {
 }
 
 @media only screen and (max-width: 1068px){
-	.main-container .sub-container h4{
+	.main-container .sub-container2 h4{
 	    font-size: 24px;
 	    line-height: 1.16667;
 	    font-weight: 400;
@@ -315,7 +370,7 @@ header {
 }
 
 @media only screen and (max-width: 734px){
-	.main-container .sub-container h4{
+	.main-container .sub-container2 h4{
 	    font-size: 19px;
 	    line-height: 1.4211;
 	    font-weight: 400;
@@ -324,7 +379,7 @@ header {
 	}
 }
 
-.main-container .sub-container p{
+.main-container .sub-container2 p{
 	color: rgb(142,142,147);
 	margin: 5px 0;
 	text-align: center;
@@ -332,10 +387,11 @@ header {
     line-height: 1.10722;
     font-weight: 400;
     letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 @media only screen and (max-width: 1068px){
-	.main-container .sub-container p{
+	.main-container .sub-container2 p{
 	    font-size: 24px;
 	    line-height: 1.16667;
 	    font-weight: 400;
@@ -345,7 +401,7 @@ header {
 }
 
 @media only screen and (max-width: 734px){
-	.main-container .sub-container p{
+	.main-container .sub-container2 p{
 	    font-size: 19px;
 	    line-height: 1.4211;
 	    font-weight: 400;
@@ -354,105 +410,7 @@ header {
 	}
 }
 
-.main-container .sub-container img{
-	width: 100%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-	z-index: 50;
-	position: relative;
-	margin-bottom: 11px;
-}
-
-.main-container .descri {
-	position: relative;
-	width: 100%;
-	text-align: center;
-	padding: 12px 0;
-	animation: fly-in 5s ease-in;
-	animation-direction: alternate;
-	z-index: 40;
-	color: rgba(99,99,102,1);
-	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-
-.main-container .descri h2{
-	margin: 0 30px 0 30px;
-	font-size: 14px;
-	font-weight: 400;
-}
-
-@keyframes fly-in {
-	0%{
-		left: 0;
-		top: -64px;
-		background-color: rgba(0,122,255,1);
-		color: white;
-	}
-	50%{
-		left: 0;
-		top: -64px;
-		background-color: rgba(0,122,255,1);
-		color: white;
-	}
-	70%{
-		left: 0;
-		top: 0px;
-		background-color: rgba(0,122,255,1);
-		color: white;
-	}
-	95%{
-		left: 0;
-		top: 0px;
-		background-color: rgba(0,122,255,1);
-		color: white;
-	}
-	100%{
-		left: 0;
-		top: 0px;
-		background-color: white;
-		color: rgb(142,142,147);
-	}
-}
-
-.main-container .slogon {
-	max-width: 980px;
-	margin: 25px auto;
-	padding: 0 22px;
-	height: auto;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-}
-
-.main-container .slogon h1{
-	text-align: justify;
-	text-justify: inter-word;
-	font-size: 67px;
-	text-transform: uppercase;
-	line-height: 1.09091;
-	font-weight: 600;
-	letter-spacing: -.002em;
-	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-
-.main-container .slogon h4{
-	font-size: 28px;
-	font-weight: 400;
-	line-height: 1.08349;
-	letter-spacing: -.003em;
-	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-
-.main-container .slogon img{
-	height: auto;
-	width: 160px;
-	margin: 15px 0 -5px 0;
-	position: relative;
-}
-
-.main-container .slogon button{
+.main-container .sub-container2 button{
 	cursor: pointer;
     text-align: center;
     font-size: 17px;
@@ -472,237 +430,107 @@ header {
     margin: 20px 0 0 0;
 }
 
-.main-container .slogon button:hover{
-	background-color: rgb(0,122,255);
+.main-container .sub-container2 button:hover{
+	background-color: rgb(10,132,255);
 }
 
-.main-container .slogon .LM a{
-	margin-top: 15px;
-	color: rgb(0,122,255);
-	font-size: 21px;
-	font-weight: 400;
-	line-height: 1.4211;
-	letter-spacing: .012em;
-}
-
-.main-container .slogon .LM a:hover{
-	text-decoration: underline;
-}
-
-.main-container .slogon .LM .arrow{
-  border: solid rgb(0,122,255);
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3.5px;
-  margin: 0 5px;
-}
-
-.main-container .slogon .LM .right{
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-}
-
-@media only screen and (max-width: 734px){
-	.main-container .slogon .LM a{
-	    font-size: 19px;
-	    line-height: 1.4211;
-	    font-weight: 400;
-	    letter-spacing: .012em;
-	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-	    margin-top: .37em;
-	}
-}
-
-.main-container .sub-container2{
-	width: 100%;
-	height: auto;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	background-color: black;
-	padding: 46px 0 46px 0;
-	color: white;
-	margin-bottom: 11px;
-	background-image: linear-gradient(-45deg, #F7F102, #FCC272, #8889CB);
-}
-
-.main-container .sub-container2 h2{
-	font-size: 500%;
-	margin: 0 30px 0 30px;
-}
-
-.main-container .sub-container2 h4{
-	font-size: 280%;
-	font-weight: normal;
-}
-
-#countdown-container {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-}
-
-#countdown-container ul {
-	padding: 0;
-}
-
-#countdown-container li {
-	display: inline-block;
-	font-size: 2.5vw;
-	list-style-type: none;
-	padding: 1em;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-#countdown-container li span {
-	display: block;
-	font-size: 5vw;
-}
-
-.main-container .sub-container3{
-	width: 100%;
-	height: auto;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	background-color: black;
-	padding: 30px 0 30px 0;
-	color: white;
-	background-image: linear-gradient(60deg, #406fe4, #d25def, #a6a6ee, #7eeff5);
-	display: inline-block;
-	border-radius: 18px;
-	margin-bottom: -20px;
-}
-
-.main-container .sub-container3 h2{
-	font-size: 56px;
-	margin: 20px 20px;
+.main-container .sub-container2 .btn-2{
+	cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    line-height: 1.07143;
-    font-weight: 600;
-    letter-spacing: -.005em;
+    min-width: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 18px;
+    background: rgb(255,204,0);
+    color: #fff;
+    border: none;
+    margin: 20px 0 0 0;
 }
 
-@media only screen and (max-width: 1068px){
-	.main-container .sub-container3 h2{
-	    font-size: 44px;
-	    line-height: 1.09091;
-	    font-weight: 600;
-	    letter-spacing: -.002em;
-	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-	}
+.main-container .sub-container2 .btn-2:hover{
+	background-color: rgb(255,214,10);
 }
 
-@media only screen and (max-width: 734px){
-	.main-container .sub-container3 h2{
-	    font-size: 32px;
-	    line-height: 1.125;
-	    font-weight: 600;
-	    letter-spacing: .004em;
-	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-	}
+.MB-container{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 20px 0 0 0;
 }
 
-.main-container .sub-container3 h2 small{
-	color: rgba(174,174,178,.6);
-}
-
-.main-container .sub-container3 h1{
+.MB-container ol {
 	font-size: 20px;
-	margin: 0 20px;
-	font-weight: normal;
-	margin: 15px 0 0 0;
-	padding: 0 10px;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    line-height: 1.07143;
+	margin: 0 70px;
+	text-align: left;
+    line-height: 1.4211;
     font-weight: 400;
-    letter-spacing: -.005em;
+    letter-spacing: .012em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-.main-container .sub-container3 #countdown-container ul{
-	padding: 0;
-	margin: 0 20px;
+@media (max-width:768px) {
+	.MB-container ol{
+		font-size: 16px;
+	}
+	.MB-container h6 {
+		font-size: 14px;
+	}
 }
 
-.main-container .sub-container3 #countdown-container li{
-	display: inline-flex;
-	font-size: 22px;
-	list-style-type: none;
-	padding: 10px;
-	text-transform: uppercase;
-	text-align: center;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    line-height: 1.07143;
+.MB-container ol li {
+	margin: 6px;
+}
+
+.MB-container ul {
+	margin: 0 30px;
+}
+
+.MB-container h6 {
+	margin: 0 60px;
+	text-align: left;
+	font-size: 20px;
+	color: black;
+    line-height: 1.4211;
+    font-weight: 600;
+    letter-spacing: .012em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.MB-container button {
+	cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.17648;
     font-weight: 400;
-    letter-spacing: -.005em;
-}
-
-.main-container .sub-container3 #countdown-container li span{
-	display: block;
-	font-size: 22px;
-	margin: 0 5px;
+    letter-spacing: -.022em;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    line-height: 1.07143;
-    font-weight: 400;
-    letter-spacing: -.005em;
+    min-width: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 18px;
+    background: #0071e3;
+    color: #fff;
+    border: none;
+    margin: 20px 0 0 0;
 }
 
-@media screen and (max-width: 1072px){
-	.main-container .sub-container3{
-		display: inline-block;
-		padding: 20px 0;
-	}
-}
-
-@media screen and (max-width:  636px){
-	.main-container .sub-container3 #countdown-container li{
-		font-size: 13px;
-		padding: 5px;
-		display: inline-block;
-	}
-	.main-container .sub-container3 #countdown-container li span{
-		font-size: 13px;
-		margin: 0;
-	}
-	.main-container .sub-container3 h1{
-		font-size: 12px;
-	}
-	.main-container .sub-container3 h2 small{
-		font-size: 25px;
+@media screen and (max-width: 767px){
+	.MB-container ol{
+		margin: 0 40px;
 	}
 }
 
-@media screen and (max-width: 790px){
-	footer .footer {
-		padding: 25px 16px 19px 16px;
-		list-style: none;
-		align-items: center;
-	}
-	footer .footer .footer-items{
-		border-top: 0.8px solid rgb(199,199,204);
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 698px){
-	.main-container .slogon h1{
-		font-size: 60px;
-	}
-	.main-container .slogon img{
-		width: 114px;
-		margin: 15px 0 0 0;
-	}
-}
-
-@media screen and (max-width: 482px){
-	.main-container .slogon h1{
-		font-size: 42px;
-	}
-	.main-container .slogon img{
-		width: 90px;
-		margin: 10px 0 0 0;
-	}
+.MB-container button:hover {
+	background-color: rgb(10,132,255);
 }
 
 footer{
@@ -712,15 +540,24 @@ footer{
 	display: block;
 }
 
-.footer {
+.footer2{
 	list-style: none;
 	align-items: center;
-	padding: 54px 22px 21px 22px;
+	padding: 34px 22px 21px 22px;
 	max-width: 980px;
 	margin: 0 auto;
 }
 
-.footer .footer-items{
+.footer2 .ann{
+	font-size: 12px;
+	color: rgb(142,142,147);
+	line-height: 1.33337;
+	font-weight: 400;
+	letter-spacing: -.01em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.footer2 .footer-items2{
 	width: 100%;
 	justify-content: flex-start;
 	border-top: 0.8px solid rgb(199,199,204);
@@ -734,12 +571,12 @@ footer{
 	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-.footer .footer-items2{
+.footer2 .footer-items3{
 	width: 100%;
 	justify-content: flex-start;
 	height: 20px;
 	color: #86868B;
-	margin: 10px 0 20px 0;
+	margin: 15px 0 20px 0;
 	font-size: 12px;
 	line-height: 1.33337;
 	font-weight: 400;
@@ -747,19 +584,7 @@ footer{
 	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-.footer .footer-items:nth-child(1){
-	border-top: none;
-}
-
-.footer .footer-items:nth-child(2){
-	border-top: none;
-}
-
-.footer .footer-items p{
-	margin: 10px 0 3px 0;
-}
-
-.footer .footer-items2 span{
+.footer2 .footer-items3 span{
     text-align: center;
     font-size: 12px;
     line-height: 1.17648;
@@ -775,6 +600,65 @@ footer{
     background: rgb(255,69,58);
     color: #fff;
     border: none;
+}
+
+.footer2 .footer-items2:nth-child(1){
+	border-top: none;
+}
+
+.footer2 .footer-items2:nth-child(2){
+	border-top: none;
+}
+
+.footer2 .footer-items2:nth-child(3){
+	border-top: none;
+}
+
+.footer2 .footer-items2:nth-child(4){
+	border-top: none;
+}
+
+.footer2 .footer-items2:nth-child(5){
+	border-top: none;
+}
+
+.footer2 .footer-items2 p{
+	margin: 10px 0 3px 0;
+}
+
+.footer2 .footer-items2 .footer-title2{
+	font-size: 12px;
+	margin: 10px 0 3px 0;
+	color: black;
+	line-height: 1.33337;
+	font-weight: 400;
+	letter-spacing: -.01em;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.footer2 .footer-items2 .footer-title2 .arrow{
+  border: solid rgb(209,209,214);
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  margin: 0 5px 0 0;
+}
+
+.footer2 .footer-items2 .footer-title2 .right{
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 790px){
+	footer .footer2 {
+		padding: 20px 15px;
+		list-style: none;
+		align-items: center;
+	}
+	footer .footer2 .footer-items2{
+		border-top: 0.8px solid rgb(199,199,204);
+		height: auto;
+	}
 }
 
 /* Scroll to Top */
