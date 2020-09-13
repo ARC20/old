@@ -671,8 +671,8 @@ footer{
     padding-right: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-radius: 6px;
-    background: rgb(255,69,58);
+    border-radius: 0 12px 12px 12px;
+    background: rgb(4,54,127);
     color: #fff;
     border: none;
 }

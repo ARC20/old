@@ -349,9 +349,9 @@ header {
 
 .sub-container .card{
 	height: 350px;
-	border-radius: 12px;
+	border-radius: 30px;
 	background-color: white;
-	box-shadow: 0 5px 15px rgba(0,0,0,.15);
+	box-shadow: 0 5px 20px rgba(0,0,0,.15);
 	margin: 25px 0;
 	padding: 50px 50px 0 50px;
 	overflow: hidden;
@@ -536,8 +536,8 @@ footer{
     padding-right: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
-    border-radius: 6px;
-    background: rgb(255,69,58);
+    border-radius: 0 12px 12px 12px;
+    background: rgb(4,54,127);
     color: #fff;
     border: none;
 }
