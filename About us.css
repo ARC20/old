@@ -487,6 +487,7 @@ header {
 
 .sub-container2 .column .img{
 	width: 100%;
+	pointer-events: none;
 }
 
 .sub-container2 .column .blankimg{
