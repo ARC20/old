@@ -6,5 +6,5 @@ let s = new Date('October 1, 2020 00:00:00').getTime(),
   // If the count down is over, write some text 
         if (s < n) {
         clearInterval(z); 
-        document.getElementById("showbytime").style.display=''; } 
+        document.getElementById('showbytime').style.display=''; } 
     });
