@@ -19,6 +19,10 @@ body {
 	  font-style: normal;
 }
 
+body.lock{
+	overflow: hidden;
+}
+
 a{
 	display: block;
 	text-decoration: none;
