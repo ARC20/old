@@ -9,7 +9,7 @@
     <link rel="icon" href="images/icons/logo2.png" type="image/icon type">
     <link rel="stylesheet" href="Membership.css">
 </head>
-<body>
+<body class="ac-nav-overlap">
     <header>
         <div class="container">
             <nav class="nav">
@@ -56,17 +56,31 @@
     </header>
     <script src="main.js"></script>
 
-<div class="main-container">
-    <div class="sub-container">
-        <img alt="img" src="images/Membership/deco03.jpg">
-        <div class="text-box">
-            <h1>MEMBERSHIP</h1>
+<nav id="ac-localnav" class="ac-localnav-dark ac-localnav-scrim css-sticky">
+    <div class="ac-ln-wrapper">
+        <div class="ac-ln-background"></div>
+        <div class="ac-ln-content">
+            <div class="ac-ln-title">
+                <a>Membership</a>
+            </div>
+            <div class="ac-ln-action ac-ln-action-button">
+                <a class="ac-ln-button" href="images/Event/ARC Membership Registration Form.pdf">Apply</a>
+            </div>
         </div>
     </div>
+</nav>
+
+<div class="main-container">
+    <div class="sub-container">
+        <img alt="img" src="images/Membership/BKI.jpg">
+    </div>
     <div class="sub-container2">
-        <h2>Member Should Know*</h2>
+        <div class="title">
+            <h3 class="hero-eyebrow typography-callout">Membership</h3>
+            <h2 class="hero-headline typography-hero-headline">Member Should Know*</h2>
+        </div>
         <div class="MB-container">
-            <ol>
+            <ol class="hero-copy typography-quote-reduced">
                 <li>The club’s membership is open to all undergraduate students at the Institute. The club’s membership cannot be exclusive and must be open to all undergraduate students;</li>
                 <li>Any non-undergraduate student members, including staff members, do not have voting rights;</li>
                 <li>Executive members, voting and non-voting, shall be undergraduate students;</li>
@@ -78,12 +92,15 @@
                     <li>Enjoy member price** for every single event held by MPI Accounting Recreational Club.</li>
                 </ul>
             </ol>
-            <br>
-            <h6>Click on the button below to download Registration Form.</h6>
-            <a href="images/Event/ARC Membership Registration Form.pdf" download class="butt"><button>Get</button></a>
         </div>
     </div>
 </div>
+
+<!--Go to Top Button-->
+<button onclick="scrollToTop();return false" id="myBtn" title="Slide to top"></button>
+
+<script src="Gototop.js" type="text/javascript">
+</script>
 
 <footer>
     <ul class="footer2">
