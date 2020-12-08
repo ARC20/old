@@ -210,7 +210,6 @@ header {
 		animation: fadeIn 1s ease-in;
 	}
 	.notice-box{
-		background-color: #000;
 		visibility: visible;
 		transition: background .18s cubic-bezier(0.32, 0.08, 0.24, 1) .18s,visibility 0s linear 0s;
 		display: block;
