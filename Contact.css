@@ -36,7 +36,7 @@ a{
 }
 
 header {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	z-index: 1400;
 	height: 44px;
@@ -275,14 +275,233 @@ header {
 	}
 }
 
-.blank{
-	width: 100%;
-	height: 44px;
+#ac-localnav.css-sticky {
+    position: sticky;
+}
+
+.ac-nav-overlap #ac-localnav {
+    margin-top: 44px;
+    margin-bottom: -96px;
+}
+
+#ac-localnav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 1200;
+}
+
+#ac-localnav, #ac-localnav select, #ac-localnav button {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#ac-localnav, #ac-localnav input, #ac-localnav textarea, #ac-localnav select, #ac-localnav button {
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    text-align: left;
+}
+
+#ac-localnav, #ac-localnav:before, #ac-localnav:after, #ac-localnav *, #ac-localnav *:before, #ac-localnav *:after {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    pointer-events: auto;
+    letter-spacing: normal;
+}
+
+#ac-localnav {
+    font-weight: normal;
+    text-size-adjust: 100%;
+}
+
+#ac-localnav .ac-ln-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    z-index: 1;
+}
+
+.ac-theme-dark #ac-localnav.ac-localnav-scrim .ac-ln-background, .ac-localnav-scrim#ac-localnav.ac-localnav-dark .ac-ln-background {
+    background-color: hsla(0,0%,100%,.72);
+}
+
+#ac-localnav.ac-localnav-scrim .ac-ln-background {
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+#ac-localnav .ac-ln-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+#ac-localnav.ac-localnav-scrim .ac-ln-background:after {
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ac-theme-dark #ac-localnav .ac-ln-background:after, #ac-localnav.ac-localnav-dark .ac-ln-background:after {
+    background-color: rgba(0,0,0,.16);
+}
+
+#ac-localnav .ac-ln-background:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: 1px;
+    z-index: 1;
+}
+
+#ac-localnav .ac-ln-content {
+    padding-left: calc(max(22px, env(safe-area-inset-left)));
+    padding-right: calc(max(22px, env(safe-area-inset-right)));
+}
+
+#ac-localnav .ac-ln-content {
+    margin: 0 auto;
+    max-width: 965px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+
+#ac-localnav .ac-ln-content::before, #ac-localnav .ac-ln-content::after {
+    content: ' ';
+    display: table;
+}
+
+.ac-theme-dark #ac-localnav .ac-ln-title, .ac-theme-dark #ac-localnav .ac-ln-title a, #ac-localnav.ac-localnav-dark .ac-ln-title, #ac-localnav.ac-localnav-dark .ac-ln-title a {
+    color: #000;
+}
+
+#ac-localnav .ac-ln-title, #ac-localnav .ac-ln-title a {
+    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+#ac-localnav .ac-ln-title {
+    font-size: 21px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    cursor: default;
+    display: block;
+    float: left;
+    margin: 14px 0 -14px;
+    padding: 0;
+    height: 52px;
+    white-space: nowrap;
+}
+
+.ac-theme-dark #ac-localnav .ac-ln-title a, #ac-localnav.ac-localnav-dark .ac-ln-title a {
+    opacity: .92;
+}
+
+#ac-localnav .ac-ln-title, #ac-localnav .ac-ln-title a {
+    color: #000;
+    -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+#ac-localnav .ac-ln-title a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    opacity: .88;
+}
+
+#ac-localnav .ac-ln-content::after {
+    clear: both;
+}
+
+@media only screen and (max-width: 767px){
+    .ac-nav-overlap #ac-localnav {
+        margin-top: 48px;
+        margin-bottom: -96px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #ac-localnav {
+        height: 48px;
+    }
+}
+
+@media only screen and (max-width: 1044px){
+    #ac-localnav {
+        min-width: 320px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #ac-localnav .ac-ln-background {
+        min-height: 48px;
+        -webkit-transition: background-color 0.5s ease 0.7s;
+        transition: background-color 0.5s ease 0.7s;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #ac-localnav .ac-ln-background:after {
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #ac-localnav .ac-ln-content {
+        padding: 0 16px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #ac-localnav .ac-ln-content {
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #ac-localnav .ac-ln-title {
+        display: inline-block;
+        margin: 12px 0 -12px;
+        height: 48px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #ac-localnav .ac-ln-title {
+        font-size: 19px;
+        line-height: 1.26316;
+        font-weight: 600;
+        letter-spacing: .012em;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
 }
 
 .main-container {
 	width: 100%;
-	background-color: rgba(248,248,253);
+	background-color: rgb(245,245,247);
+	margin-top: 85px;
 }
 
 .main-container .descri {
@@ -338,7 +557,7 @@ header {
 
 .sub-container{
 	padding: 40px 22px;
-	background-color: rgba(248,248,253);
+	background-color: rgb(245,245,247);
 	color: black;
 	transition: .3s;
 	max-width: 980px;
@@ -383,7 +602,6 @@ header {
 	height: 350px;
 	border-radius: 30px;
 	background-color: white;
-	box-shadow: 0 5px 20px rgba(0,0,0,.15);
 	margin: 25px 0;
 	padding: 50px 50px 0 50px;
 	overflow: hidden;
