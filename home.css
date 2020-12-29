@@ -821,6 +821,7 @@ footer{
 	border: none;
 	outline: none;
 	background-color: rgba(0,0,0,.2);
+	-webkit-backdrop-filter: blur(12px);
 	backdrop-filter: blur(12px);
 	cursor: pointer;
 	width: 25px;
