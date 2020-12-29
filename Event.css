@@ -1084,6 +1084,10 @@ header {
 	}
 }
 
+.main-container .sub-container2 .des-box{
+	padding: 10px 0 20px 0;
+}
+
 .main-container .sub-container2 .cny{
 	background: -webkit-linear-gradient(135deg, #111A21, #A9081C, #716360);
 	-webkit-background-clip: text;
@@ -1255,7 +1259,6 @@ header {
 	padding: 46px 0 46px 0;
 	color: white;
 	margin-bottom: 11px;
-	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -1335,7 +1338,8 @@ header {
 
 .image-box {
 	min-height: 300px;
-	margin: 14.5px 0;
+	max-width: 965px;
+	margin: 14.5px auto;
 	display: block;
 	position: relative;
 	overflow: auto;
