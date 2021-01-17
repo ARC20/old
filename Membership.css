@@ -43,6 +43,8 @@ header {
 	height: 44px;
 	width: 100%;
 	background-color: rgba(0,0,0,.8);
+	-webkit-transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
+    transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
@@ -162,7 +164,6 @@ header {
 	header.active{
 		height: 100%;
 		background-color: #000;
-		position: fixed;
 	}
 	.nav-link-logo{
 		width: 60px;
@@ -190,7 +191,7 @@ header {
 		z-index: 1000;
 		box-sizing: border-box;
 		opacity: 0;
-		transition: opacity .3s;
+		transition: opacity 0s liner 1s;
 		visibility: hidden;
 	}
 	.active .nav-list-larger{
@@ -198,6 +199,8 @@ header {
 		height: 100vh;
 		opacity: 1;
 		visibility: visible;
+		-webkit-transition-delay: 0s;
+		transition-delay: 0s;
 	}
 	.nav-list-larger .nav-item{
 		width: 100%;
@@ -205,67 +208,64 @@ header {
 		border-bottom: 1px solid #424245;
 		height: 43px;
 	}
-	.nav-list-larger .nav-item:nth-child(9){
+	.nav-list-larger .nav-item:nth-child(6){
 		border-bottom: none;
 	}
 	.active .nav-list-larger .nav-item{
 		animation: fadeIn 1s ease-in;
 	}
 	.notice-box{
-		visibility: visible;
-		transition: background .18s cubic-bezier(0.32, 0.08, 0.24, 1) .18s,visibility 0s linear 0s;
+		position: absolute;
+		height: 0;
+	    transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1), height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
 		display: block;
-	    position: absolute;
 	    z-index: 4;
 	    top: 48px;
 	    right: 0;
-	    bottom: 0;
 	    left: 0;
 	    padding: 0 10px 0 10px;
-	    box-sizing: border-box;
-	    height: 3.11765em;
 	}
 	.notice-box .notice{
 		display: block;
-	    height: 2.11765em;
+		background-color: rgb(29,29,31);
+	    height: 0;
+	    transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1), height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
 	    max-width: 584px;
 	    margin: 0 auto;
 	    padding: 0;
 	    outline-offset: 0;
-	    opacity: 1;
 	    font-size: 17px;
 	    line-height: 1.23536;
-	    font-weight: 400;
-	    letter-spacing: -.022em;
-	    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 	    color: #f5f5f7;
 	    position: relative;
 	    z-index: 1;
-	    background-color: rgb(29,29,31);
 	    border-radius: 8px;
 	    text-decoration: none;
 	    white-space: nowrap;
-	    transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-	    -webkit-tap-highlight-color: transparent;
+	    letter-spacing: -.022em;
+	    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 	}
-	.notice-box p{
+	.notice-box .notice p{
 		text-align: center;
-		line-height: 1.23536;
+		line-height: 0;
 		font-size: 17px;
+	    letter-spacing: -.022em;
+		transition: line-height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
 		font-weight: 400;
-		letter-spacing: -.022em;
-		display: none;
-		transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1), height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
-		animation: fadeIn 1s ease-in;
 		color: rgb(110,110,115);
+		overflow: none;
 	}
 	.active .notice-box{
-		height: 2.11765em;
+		 height: 36px;
+		 transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1), height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
 	}
-	.active .notice-box p{
-		text-align: center;
+	.active .notice{
+		height: 2.11765em;
+		transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1), height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
+	}
+	.active .notice p{
 		line-height: 2.11;
-		display: block;
+		transition: line-height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
 	}
 	@keyframes fadeIn {
 		from{
