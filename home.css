@@ -390,6 +390,13 @@ header {
 	}
 }
 
+/* CNY21 srart*/
+
+.main-container .special{
+	border-radius: 30px;
+	background-color: rgba(175,32,41,255);
+}
+
 .main-container .sub-container img{
 	width: 100%;
 	display: block;
@@ -400,6 +407,165 @@ header {
 	position: relative;
 	margin-bottom: 11px;
 }
+
+.main-container .sub-container .cny21{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	z-index: 50;
+	position: relative;
+	margin-bottom: 11px;
+	border-radius: 30px;
+}
+
+.notice-box-special{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0 0 0;
+	color: #fff;
+}
+
+.notice-box-special h3{
+	font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.notice-box-special p.cny-inf{
+	margin: 10px 0 0 0;
+	font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #fff;
+}
+
+.notice-box-special .image-download{
+	width: 446px;
+    height: 244px;
+    background-size: 446px 244px;
+    background-repeat: no-repeat;
+    background-image: url("images/Home/year-of-ox/year-of-ox.png");
+    opacity: 1;
+    margin: 20px auto;
+}
+
+.notice-box-special .download-outline{
+	max-width: 510px;
+	margin: 0 auto;
+}
+
+.notice-box-special .donwload-container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    margin: 43px auto 0 auto;
+    padding: 0 0 43px 0;
+    position: relative;
+}
+
+.notice-box-special .donwload-container .device .device-title{
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    font-size: 17px;
+    line-height: 1.23536;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.notice-box-special .donwload-container .device .device-link{
+    color: #2997ff;
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.notice-box-special .donwload-container .device .device-link p.icon-copy{
+    color: #2997ff;
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    display: inline;
+    position: static;
+    color: #2997ff;
+}
+
+@media only screen and (max-width: 1068px){
+	.main-container .special{
+		border-radius: 0;
+	}
+	.main-container .sub-container .cny21{
+	    border-radius: 0;
+	}
+	.notice-box-special h3{
+		font-size: 32px;
+	    line-height: 1.125;
+	    font-weight: 600;
+	    letter-spacing: .004em;
+	    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+	.notice-box-special .image-download{
+		width: 378px;
+	    height: 208px;
+	    background-size: 378px 208px;
+	    background-repeat: no-repeat;
+	    background-image: url("images/Home/year-of-ox/year-of-ox.png");
+	    opacity: 1;
+	    margin: 30px auto;
+	}
+	.notice-box-special .download-outline{
+		max-width: 462px;
+		margin: 0 auto;
+	}
+	.notice-box-special .donwload-container{
+	    grid-template-columns: repeat(3, 154px);
+	    margin: 35px 0 0 0;
+	    padding: 0 0 66px 0;
+	}
+}
+
+@media only screen and (max-width: 734px){
+	.main-container .special{
+		border-radius: 0;
+	}
+	.main-container .sub-container .cny21{
+	    border-radius: 0;
+	}
+	.notice-box-special .image-download{
+		width: 284px;
+	    height: 155px;
+	    background-size: 284px 155px;
+	    background-repeat: no-repeat;
+	    background-image: url("images/Home/year-of-ox/year-of-ox.png");
+	    opacity: 1;
+	    margin: 40px auto;
+	}
+	.notice-box-special .download-outline{
+		max-width: 279px;
+		margin: 0 auto;
+	}
+	.notice-box-special .donwload-container{
+	    grid-template-columns: repeat(2, 50%);
+	    grid-template-rows: repeat(2, 81px);
+	    margin: 60px 0 0 0;
+	    justify-items: center;
+	    text-align: center;
+	    padding: 0 0 60px 0;
+	}
+}
+
+/* CNY21 end*/
 
 .main-container .descri {
 	position: relative;
